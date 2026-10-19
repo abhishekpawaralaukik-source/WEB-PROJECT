@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+.task-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 25px;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.task-header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.task-header p {
+    color: #666;
+    font-size: 15px;
+}
+
+.add-task-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 7px;
+    background: #222;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.task-card {
+    background: #fff;
+    padding: 22px;
+    border: 1px solid #e2e5e8;
+    border-radius: 10px;
+}
+
+.task-card h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.task-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.task-status {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.task-status.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.task-status.completed {
+    background: #d4edda;
+    color: #155724;
+}
+
+@media (max-width: 600px) {
+
+    .task-page {
+        padding: 25px 15px;
+    }
+
+    .task-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+}
