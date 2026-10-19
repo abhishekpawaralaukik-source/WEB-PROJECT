@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="task-page">
+
+        <!-- Task Header -->
+        <section class="task-header">
+
+            <div>
+                <h1>My Tasks</h1>
+                <p>Manage and keep track of your tasks.</p>
+            </div>
+
+            <button type="button" class="add-task-btn" id="add-task-btn">
+                Add Task
+            </button>
+
+        </section>
+
+
+        
+
+
+        <!-- Task List -->
+        <section class="task-list">
+
+               
+        </section>
+
+    </main>
+      <!-- Modal structure -->
+            <div class="task-modal">
+                <div class="modal-box">
+                    <h2>Create New Task</h2>
+                      <div class="form-group">
+
+                        <label for="task-title">Task Title</label>
+
+                        <input type="text" id="task-title" placeholder="Enter task title" required>
+
+                      </div>
+                      <div class="form-group">
+
+                        <label for="task-description">Description</label>
+
+                        <textarea id="task-description" placeholder="Enter task description" required></textarea>
+
+                      </div>
+                      <div class="modal-actions">
+
+                      <button type="button" class="cancel-btn">
+                         Cancel
+                      </button>
+
+                      <button type="button" class="save-btn">
+                          Save
+                      </button>
+
+                      </div>
+                </div>
+            </div>
+    <script src="script.js"></script>
+</body>
+</html>
