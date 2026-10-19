@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="auth-page">
+
+    <!-- Login View -->
+    <section class="auth-card" id="login-view">
+
+        <div class="auth-header">
+            <h1>Welcome Back</h1>
+            <p>Login to continue to your Student Task Manager</p>
+        </div>
+
+        <form class="auth-form">
+
+            <div class="form-group">
+                <label for="login-email">Email Address</label>
+                <input
+                    type="email"
+                    id="login-email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <small class="error-message" id="login-email-error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input
+                    type="password"
+                    id="login-password"
+                    name="password"
+                    placeholder="Enter your password"
+                    required
+                >
+
+                <small class="error-message" id="login-password-error"></small>
+            </div>
+
+            <button type="submit" class="auth-btn">
+                Login
+            </button>
+
+        </form>
+
+        <p class="switch-text">
+            Don't have an account?
+            <a href="#" id="show-register">Create an account</a>
+        </p>
+
+    </section>
+
+
+    <!-- Registration View -->
+    <section class="auth-card" id="register-view">
+
+        <div class="auth-header">
+            <h1>Create Account</h1>
+            <p>Create your account to manage your tasks.</p>
+        </div>
+
+        <form class="auth-form">
+
+            <div class="form-group">
+                <label for="register-name">Full Name</label>
+                <input
+                    type="text"
+                    id="register-name"
+                    name="fullName"
+                    placeholder="Enter your full name"
+                    required
+                >
+                <small class="error-message" id="register-name-error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="register-email">Email Address</label>
+                <input
+                    type="email"
+                    id="register-email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+                <small class="error-message" id="register-email-error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="register-password">Password</label>
+                <input
+                    type="password"
+                    id="register-password"
+                    name="password"
+                    placeholder="Create a password"
+                    required
+                >
+                <small class="error-message" id="register-password-error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input
+                    type="password"
+                    id="confirm-password"
+                    name="confirmPassword"
+                    placeholder="Enter password again"
+                    required
+                >
+                <small class="error-message" id="confirm-password-error"></small>
+            </div>
+
+            <button type="submit" class="auth-btn">
+                Create Account
+            </button>
+
+        </form>
+
+        <p class="switch-text">
+            Already have an account?
+            <a href="#" id="show-login">Login</a>
+        </p>
+
+    </section>
+
+</main>
+    <script src="script.js"></script>
+</body>
+</html>
